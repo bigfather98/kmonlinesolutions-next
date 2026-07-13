@@ -28,6 +28,11 @@ export default function TestimonialsSection() {
   const next = () => setCurrent((c) => (c + 1) % testimonials.length);
   const prev = () => setCurrent((c) => (c - 1 + testimonials.length) % testimonials.length);
 
+  const handleKeyDown = (e: React.KeyboardEvent) => {
+    if (e.key === "ArrowLeft") prev();
+    if (e.key === "ArrowRight") next();
+  };
+
   return (
     <section className="py-24 md:py-32 bg-ink border-b-2 border-ink">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -43,7 +48,7 @@ export default function TestimonialsSection() {
           </p>
         </AnimatedSection>
 
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-4xl mx-auto" onKeyDown={handleKeyDown} tabIndex={0} role="group" aria-label="Testimonial carousel">
           <div className="relative min-h-[280px] offset-border bg-paper p-8 md:p-12">
             <AnimatePresence mode="wait">
               <motion.div

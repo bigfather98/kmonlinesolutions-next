@@ -10,7 +10,7 @@ interface Props {
 }
 
 export default function AnimatedSection({ children, className = "", delay = 0 }: Props) {
-  const ref = useRef(null);
+  const ref = useRef<HTMLDivElement>(null);
 
   return (
     <motion.div
