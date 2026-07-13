@@ -21,34 +21,9 @@ export default function PortfolioSection() {
           </p>
         </AnimatedSection>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
-          {featuredProjects.slice(0, 2).map((project, i) => (
-            <AnimatedSection key={project.title} delay={0.1 + i * 0.08} className={i === 0 ? "col-span-2 row-span-2" : "col-span-2 md:col-span-1"}>
-              <a href="/samples" className="block offset-border h-full">
-                <div className="relative">
-                  <Image
-                    src={project.src}
-                    alt={project.title}
-                    width={i === 0 ? 800 : 400}
-                    height={i === 0 ? 450 : 225}
-                    className="w-full h-auto"
-                    sizes="(max-width: 768px) 100vw, 50vw"
-                  />
-                  <div className="absolute top-2 right-2">
-                    <span className="px-2 py-1 font-mono-custom text-xs border-2 border-ink bg-paper text-ink">
-                      {project.category}
-                    </span>
-                  </div>
-                </div>
-                <div className="p-4 border-t-2 border-ink">
-                  <h3 className="font-slab font-bold text-ink">{project.title}</h3>
-                </div>
-              </a>
-            </AnimatedSection>
-          ))}
-
-          {featuredProjects.slice(2).map((project, i) => (
-            <AnimatedSection key={project.title} delay={0.2 + i * 0.06}>
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
+          {featuredProjects.map((project, i) => (
+            <AnimatedSection key={project.title} delay={0.1 + i * 0.08}>
               <a href="/samples" className="block offset-border h-full">
                 <div className="relative">
                   <Image
@@ -57,7 +32,7 @@ export default function PortfolioSection() {
                     width={400}
                     height={225}
                     className="w-full h-auto"
-                    sizes="(max-width: 768px) 50vw, 25vw"
+                    sizes="(max-width: 768px) 50vw, 33vw"
                   />
                   <div className="absolute top-2 right-2">
                     <span className="px-2 py-1 font-mono-custom text-xs border-2 border-ink bg-paper text-ink">
