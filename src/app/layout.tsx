@@ -50,6 +50,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://kmonlinesolutions.com",
   },
+  icons: {
+    icon: "/favicon.png",
+  },
 };
 
 const jsonLd = {
