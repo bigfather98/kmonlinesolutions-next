@@ -13,8 +13,8 @@
 body {
   font-family: var(--font-slab), Georgia, serif;
   overflow-x: hidden;
-  background-color: #f4f1ea;
-  color: #111111;
+  background-color: var(--color-paper);
+  color: var(--color-ink);
 }
 
 html {
@@ -22,11 +22,11 @@ html {
 }
 
 .offset-border {
-  border: 2px solid #111111;
-  box-shadow: 6px 6px 0 0 #111111;
+  border: 2px solid var(--color-ink);
+  box-shadow: 6px 6px 0 0 var(--color-ink);
 }
 
 .offset-border-sm {
-  border: 2px solid #111111;
-  box-shadow: 4px 4px 0 0 #111111;
+  border: 2px solid var(--color-ink);
+  box-shadow: 4px 4px 0 0 var(--color-ink);
 }

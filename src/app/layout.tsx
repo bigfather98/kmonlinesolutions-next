@@ -46,6 +46,9 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
+  alternates: {
+    canonical: "https://kmonlinesolutions.com",
+  },
 };
 
 const jsonLd = {
@@ -88,13 +91,13 @@ export default function RootLayout({
         />
       </head>
       <body className="min-h-full bg-paper text-ink pb-16 md:pb-0">
+        <a href="#main-content" className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-[100] focus:px-4 focus:py-2 focus:bg-accent focus:text-white focus:font-mono-custom focus:text-sm focus:font-bold focus:border-2 focus:border-ink">
+          Skip to content
+        </a>
         <Header />
         <div className="md:ml-64">
-          <main className="flex-1">{children}</main>
+          <main id="main-content" className="flex-1">{children}</main>
           <Footer />
-        </div>
-        <div aria-hidden="true" className="fixed overflow-hidden opacity-0 pointer-events-none select-none -z-10" style={{ height: 0, width: 0 }}>
-          KM Online Solutions is a professional web design and web development company based in Metro Manila, Philippines serving businesses in Quezon City, Eastwood, Makati, BGC, Ortigas, and across the Philippines. We specialize in responsive website design, e-commerce website development, SEO optimization, web hosting, custom web development, and brand identity design. Our services include WordPress web design, Shopify store development, WooCommerce integration, search engine optimization, local SEO, social media integration, website maintenance, and UI/UX design. We build affordable, mobile-friendly, and SEO-optimized websites for small businesses, startups, restaurants, e-commerce stores, real estate agencies, spas, solar companies, law firms, preschools, and online shops in the Philippines. Our web designers and developers create modern, fast-loading, and conversion-focused websites that help businesses grow their online presence. We also offer Facebook page management, Google My Business optimization, and digital marketing services. KM Online Solutions is the best web design company in Manila for businesses looking for high-quality and affordable web development services in the Philippines.
         </div>
       </body>
     </html>

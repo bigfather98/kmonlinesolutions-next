@@ -3,44 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import AnimatedSection from "./AnimatedSection";
-
-const projects = [
-  {
-    title: "Online Shop",
-    category: "E-Commerce",
-    src: "/images/Online-Shop-website-768x432.webp",
-  },
-  {
-    title: "Real Estate",
-    category: "Advanced",
-    src: "/images/Real-Estate-website-768x432.webp",
-  },
-  {
-    title: "Solar Company",
-    category: "Custom",
-    src: "/images/Solar-Company-website-768x432.webp",
-  },
-  {
-    title: "Restaurant",
-    category: "Basic",
-    src: "/images/restaurant-website-768x432.webp",
-  },
-  {
-    title: "Restaurant Business",
-    category: "Basic",
-    src: "/images/restaurant-philippines-website.webp",
-  },
-  {
-    title: "Cosmetic Brand",
-    category: "E-Commerce",
-    src: "/images/Luxe-Skin-Philippines.png",
-  },
-  {
-    title: "Spa Business",
-    category: "Advanced",
-    src: "/images/Spa-website-768x432.webp",
-  },
-];
+import { featuredProjects } from "@/data/portfolio";
 
 export default function PortfolioSection() {
   return (
@@ -59,7 +22,7 @@ export default function PortfolioSection() {
         </AnimatedSection>
 
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
-          {projects.slice(0, 2).map((project, i) => (
+          {featuredProjects.slice(0, 2).map((project, i) => (
             <AnimatedSection key={project.title} delay={0.1 + i * 0.08} className={i === 0 ? "col-span-2 row-span-2" : "col-span-2 md:col-span-1"}>
               <a href="/samples" className="block offset-border h-full">
                 <div className="relative">
@@ -84,7 +47,7 @@ export default function PortfolioSection() {
             </AnimatedSection>
           ))}
 
-          {projects.slice(2).map((project, i) => (
+          {featuredProjects.slice(2).map((project, i) => (
             <AnimatedSection key={project.title} delay={0.2 + i * 0.06}>
               <a href="/samples" className="block offset-border h-full">
                 <div className="relative">

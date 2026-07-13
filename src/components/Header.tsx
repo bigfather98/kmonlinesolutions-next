@@ -5,6 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
+import { SITE } from "@/lib/constants";
 
 const navLinks = [
   { href: "/", label: "HOME" },
@@ -17,9 +18,12 @@ export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const pathname = usePathname();
   const toggleRef = useRef<HTMLButtonElement>(null);
+  const firstLinkRef = useRef<HTMLAnchorElement>(null);
 
   useEffect(() => {
-    if (!menuOpen && toggleRef.current) {
+    if (menuOpen && firstLinkRef.current) {
+      firstLinkRef.current.focus();
+    } else if (!menuOpen && toggleRef.current) {
       toggleRef.current.focus();
     }
   }, [menuOpen]);
@@ -67,7 +71,7 @@ export default function Header() {
             CONTACT US
           </Link>
           <p className="text-xs font-mono-custom text-muted text-center">
-            connect@kmonlinesolutions.com
+            {SITE.email}
           </p>
         </div>
       </aside>
@@ -110,9 +114,10 @@ export default function Header() {
             className="fixed inset-0 z-40 md:hidden bg-paper pt-16"
           >
             <nav className="p-4 space-y-2">
-              {navLinks.map((link) => (
+              {navLinks.map((link, idx) => (
                 <Link
                   key={link.href}
+                  ref={idx === 0 ? firstLinkRef : undefined}
                   href={link.href}
                   onClick={() => setMenuOpen(false)}
                   className={`block px-4 py-4 text-sm font-mono-custom font-bold border-2 ${
