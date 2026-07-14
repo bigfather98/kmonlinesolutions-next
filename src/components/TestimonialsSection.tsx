@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import AnimatedSection from "./AnimatedSection";
 
@@ -8,7 +8,7 @@ const testimonials = [
   {
     quote: "Our website was outdated and not generating leads. Kirk redesigned it beautifully, and now we're getting more inquiries than ever. Truly the best web design service in the Philippines!",
     author: "Alexander Engel",
-    role: "Project Manager",
+    role: "CEO",
   },
   {
     quote: "We needed a professional website for our business, and KM Online Solutions has exceeded our expectations. The design is sleek, mobile-friendly, and optimized for SEO.",
@@ -18,15 +18,20 @@ const testimonials = [
   {
     quote: "From start to finish, the team was incredibly responsive and knowledgeable. Our website now loads fast, ranks well on Google, and looks stunning.",
     author: "Elene Claes",
-    role: "Marketing Manager",
+    role: "CEO",
   },
 ];
 
 export default function TestimonialsSection() {
   const [current, setCurrent] = useState(0);
 
-  const next = () => setCurrent((c) => (c + 1) % testimonials.length);
-  const prev = () => setCurrent((c) => (c - 1 + testimonials.length) % testimonials.length);
+  const next = useCallback(() => setCurrent((c) => (c + 1) % testimonials.length), []);
+  const prev = useCallback(() => setCurrent((c) => (c - 1 + testimonials.length) % testimonials.length), []);
+
+  useEffect(() => {
+    const id = setInterval(next, 5000);
+    return () => clearInterval(id);
+  }, [next]);
 
   const handleKeyDown = (e: React.KeyboardEvent) => {
     if (e.key === "ArrowLeft") prev();
