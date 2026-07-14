@@ -97,13 +97,7 @@ export default function ContactPageClient() {
           </div>
 
           <div className="grid lg:grid-cols-2 gap-12 items-start">
-            <motion.div
-              initial={{ clipPath: "polygon(0 0, 0 0, 0 100%, 0 100%)" }}
-              whileInView={{ clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)" }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-              className="space-y-6"
-            >
+            <div className="space-y-6">
               {contactInfo.map((item, i) => (
                 <motion.div
                   key={item.title}
@@ -126,7 +120,7 @@ export default function ContactPageClient() {
                   </div>
                 </motion.div>
               ))}
-            </motion.div>
+            </div>
 
             <motion.div
               initial={{ clipPath: "polygon(0 0, 0 0, 0 100%, 0 100%)" }}
