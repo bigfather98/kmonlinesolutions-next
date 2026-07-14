@@ -12,6 +12,7 @@ After completing any group of tasks (fixes, features, changes), you MUST proacti
 > "Shall I create a new branch and open a PR against `master` with these changes?"
 
 Wait for the user's response before proceeding. If they say yes:
+0. **IMPORTANT**: First check if there is already an open PR from this session using `gh pr list`. If there is, skip branch creation — just commit and push to the existing branch to update the PR.
 1. If there is already an open PR from this session, commit and push to that same branch to update the existing PR.
 2. Otherwise, create a new branch with a short descriptive name (e.g., `fix/seo-issues`, `feat/add-contact-form`)
 3. Stage all changes (`git add -A`)
