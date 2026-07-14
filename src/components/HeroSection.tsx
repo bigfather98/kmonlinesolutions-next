@@ -104,7 +104,7 @@ export default function HeroSection() {
           >
             <div className="relative my-2" style={{ transform: 'rotate(6deg)' }}>
               <div className="absolute inset-0 offset-border bg-ink/5 translate-x-2 translate-y-2" />
-              <div className="relative offset-border w-full max-w-sm bg-white overflow-hidden">
+              <div className="relative offset-border max-w-md bg-white overflow-hidden">
                 <div className="flex items-center gap-1.5 px-3 py-2 border-b-2 border-ink bg-gray-100">
                   <span className="w-3 h-3 rounded-full bg-red-500 border border-red-700" />
                   <span className="w-3 h-3 rounded-full bg-yellow-400 border border-yellow-600" />
@@ -115,7 +115,7 @@ export default function HeroSection() {
                   alt="Website design showcase"
                   width={450}
                   height={300}
-                  className="w-full h-auto"
+                  className="h-auto"
                   priority
                 />
               </div>
