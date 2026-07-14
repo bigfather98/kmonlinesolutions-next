@@ -66,7 +66,7 @@ export default function ContactPageClient() {
   return (
     <div>
       <section className="min-h-[40vh] flex items-center bg-paper border-b-2 border-ink">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-24 w-full">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-8 md:pt-24 md:pb-16 w-full">
           <motion.div
             initial={{ clipPath: "polygon(0 0, 0 0, 0 100%, 0 100%)" }}
             animate={{ clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)" }}
