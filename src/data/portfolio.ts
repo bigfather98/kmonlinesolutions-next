@@ -35,11 +35,6 @@ export const featuredProjects: Project[] = [
     src: "/images/restaurant-website-768x432.webp",
   },
   {
-    title: "Cosmetic Brand",
-    category: "E-Commerce",
-    src: "/images/Luxe-Skin-Philippines.png",
-  },
-  {
     title: "Spa Business",
     category: "Advanced",
     src: "/images/Spa-website-768x432.webp",
