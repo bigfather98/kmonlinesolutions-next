@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 export default function HeroSection() {
   return (
     <section className="relative min-h-screen flex items-center bg-paper border-b-2 border-ink">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32 w-full">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20 w-full">
         <div className="grid md:grid-cols-5 gap-8 md:gap-12 items-center">
           <motion.div
             initial={{ clipPath: "polygon(0 0, 0 0, 0 100%, 0 100%)" }}
