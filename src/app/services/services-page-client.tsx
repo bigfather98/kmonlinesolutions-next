@@ -7,14 +7,14 @@ export default function ServicesPageClient() {
   return (
     <div>
       <section className="min-h-[40vh] flex items-center bg-paper border-b-2 border-ink">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-4 md:pt-24 md:pb-12 w-full">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-4 lg:pt-24 lg:pb-12 w-full">
           <motion.div
             initial={{ clipPath: "polygon(0 0, 0 0, 0 100%, 0 100%)" }}
             animate={{ clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)" }}
             transition={{ duration: 0.8, ease: [0.25, 0.1, 0.25, 1] }}
           >
             <p className="font-mono-custom text-xs text-ink mb-4 tracking-widest uppercase">What We Do</p>
-            <h1 className="font-slab text-5xl md:text-6xl lg:text-7xl font-bold text-ink leading-none">
+            <h1 className="font-slab text-5xl lg:text-7xl font-bold text-ink leading-none">
               OUR
               <br />
               SERVICES
@@ -26,7 +26,7 @@ export default function ServicesPageClient() {
         </div>
       </section>
 
-      <section className="py-20 md:py-28 bg-paper">
+      <section className="py-20 lg:py-28 bg-paper">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {services.map((service, i) => (

@@ -43,20 +43,20 @@ export default function HeroSection() {
   return (
     <section className="relative min-h-screen flex flex-col bg-paper border-b-2 border-ink">
       {/* Dot grid background */}
-      <div className="hidden md:block absolute right-0 top-0 bottom-0 w-2/5 bg-dot-grid opacity-30 pointer-events-none" />
-      <div className="flex-1 flex items-center max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20 w-full">
-        <div className="grid md:grid-cols-5 gap-8 md:gap-12 items-center">
+      <div className="hidden lg:block absolute right-0 top-0 bottom-0 w-2/5 bg-dot-grid opacity-30 pointer-events-none" />
+      <div className="flex-1 flex items-center max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-20 w-full">
+        <div className="grid lg:grid-cols-5 gap-8 lg:gap-12 items-center">
           <motion.div
             initial={{ clipPath: "polygon(0 0, 0 0, 0 100%, 0 100%)" }}
             animate={{ clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)" }}
             transition={{ duration: 0.8, ease: [0.25, 0.1, 0.25, 1] }}
-            className="md:col-span-3"
+            className="lg:col-span-3"
           >
             <p className="font-mono-custom text-xs text-ink mb-6 tracking-widest uppercase">
               Manila PH &mdash; Web Design &amp; Development
             </p>
 
-            <h1 className="font-slab text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold leading-none text-ink">
+            <h1 className="font-slab text-5xl sm:text-6xl lg:text-8xl font-bold leading-none text-ink">
               WE BUILD
               <br />
               WEBSITES
@@ -64,7 +64,7 @@ export default function HeroSection() {
               THAT WORK
             </h1>
 
-            <p className="font-slab text-lg md:text-xl text-muted leading-relaxed mt-8 mb-8 max-w-xl">
+            <p className="font-slab text-lg lg:text-xl text-muted leading-relaxed mt-8 mb-8 max-w-xl">
               Professional Website Design &amp; SEO Services for Businesses in the Philippines.
               We create user-friendly, SEO-optimized websites to help Filipino businesses grow online.
             </p>
@@ -100,7 +100,7 @@ export default function HeroSection() {
             initial={{ clipPath: "polygon(0 0, 0 0, 0 100%, 0 100%)" }}
             animate={{ clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)" }}
             transition={{ duration: 0.8, delay: 0.3, ease: [0.25, 0.1, 0.25, 1] }}
-            className="hidden md:flex md:col-span-2 justify-center relative py-6"
+            className="hidden lg:flex lg:col-span-2 justify-center relative py-6"
           >
             <div className="relative my-2" style={{ transform: 'rotate(6deg)' }}>
               <div className="absolute inset-0 offset-border bg-ink/5 translate-x-2 translate-y-2" />

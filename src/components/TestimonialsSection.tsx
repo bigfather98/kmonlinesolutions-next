@@ -39,11 +39,11 @@ export default function TestimonialsSection() {
   };
 
   return (
-    <section className="py-24 md:py-32 bg-ink border-b-2 border-ink">
+    <section className="py-24 lg:py-32 bg-ink border-b-2 border-ink">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <AnimatedSection>
           <p className="font-mono-custom text-xs text-paper mb-4 tracking-widest uppercase">Testimonials</p>
-          <h2 className="font-slab text-4xl md:text-5xl lg:text-6xl font-bold text-paper mb-4 leading-none">
+          <h2 className="font-slab text-4xl lg:text-6xl font-bold text-paper mb-4 leading-none">
             WHAT OUR
             <br />
             CLIENTS SAY
@@ -54,7 +54,7 @@ export default function TestimonialsSection() {
         </AnimatedSection>
 
         <div className="max-w-4xl mx-auto" onKeyDown={handleKeyDown} tabIndex={0} role="group" aria-label="Testimonial carousel">
-          <div className="relative min-h-[280px] offset-border bg-paper p-8 md:p-12">
+          <div className="relative min-h-[280px] offset-border bg-paper p-8 lg:p-12">
             <AnimatePresence mode="wait">
               <motion.div
                 key={current}
@@ -63,7 +63,7 @@ export default function TestimonialsSection() {
                 exit={{ opacity: 0, x: -40 }}
                 transition={{ duration: 0.3 }}
               >
-                <p className="font-slab text-lg md:text-xl text-ink leading-relaxed mb-8">
+                <p className="font-slab text-lg lg:text-xl text-ink leading-relaxed mb-8">
                   &ldquo;{testimonials[current].quote}&rdquo;
                 </p>
                 <p className="font-slab font-bold text-ink">{testimonials[current].author}</p>
