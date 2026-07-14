@@ -94,13 +94,13 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className="min-h-full bg-paper text-ink pb-16 md:pb-0">
+      <body className="min-h-full bg-paper text-ink pb-16 lg:pb-0">
         <a href="#main-content" className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-[100] focus:px-4 focus:py-2 focus:bg-accent focus:text-white focus:font-mono-custom focus:text-sm focus:font-bold focus:border-2 focus:border-ink">
           Skip to content
         </a>
         <Header />
-        <div className="md:ml-64">
-          <main id="main-content" className="flex-1 pt-20 md:pt-0">{children}</main>
+        <div className="lg:ml-64">
+          <main id="main-content" className="flex-1 pt-20 lg:pt-0">{children}</main>
           <Footer />
         </div>
         <Analytics />

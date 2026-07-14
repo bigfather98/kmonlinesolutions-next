@@ -62,7 +62,7 @@ export default function Header() {
 
   return (
     <>
-      <aside className="hidden md:flex fixed left-0 top-0 h-full w-64 flex-col border-r-2 border-ink bg-paper z-50">
+      <aside className="hidden lg:flex fixed left-0 top-0 h-full w-64 flex-col border-r-2 border-ink bg-paper z-50">
         <div className="p-6 border-b-2 border-ink">
           <Link href="/" className="flex justify-center">
             <Image
@@ -112,7 +112,7 @@ export default function Header() {
         </div>
       </aside>
 
-      <div className="md:hidden fixed top-0 left-0 right-0 z-50 border-b-2 border-ink bg-paper">
+      <div className="lg:hidden fixed top-0 left-0 right-0 z-50 border-b-2 border-ink bg-paper">
         <div className="flex items-center justify-between p-4">
           <Link href="/" className="flex justify-center w-32">
             <Image
@@ -147,7 +147,7 @@ export default function Header() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.2 }}
-            className="fixed inset-0 z-40 md:hidden bg-paper pt-20"
+            className="fixed inset-0 z-40 lg:hidden bg-paper pt-42"
           >
                 <nav className="p-4 space-y-2">
               {navLinks.map((link, idx) => (
@@ -183,7 +183,7 @@ export default function Header() {
         )}
       </AnimatePresence>
 
-      <div className="fixed bottom-0 left-0 right-0 z-50 md:hidden flex border-t-2 border-ink bg-paper">
+      <div className="fixed bottom-0 left-0 right-0 z-50 lg:hidden flex border-t-2 border-ink bg-paper">
         <Link
           href="/samples"
           className="flex-1 flex items-center justify-center gap-2 px-4 py-3 border-r-2 border-ink font-mono-custom text-xs font-bold text-ink hover:bg-accent hover:text-white transition-colors"
@@ -208,7 +208,7 @@ export default function Header() {
         href="https://m.me/522285660969539"
         target="_blank"
         rel="noopener noreferrer"
-        className="fixed bottom-20 right-4 z-50 md:hidden w-14 h-14 border-2 border-ink bg-accent flex items-center justify-center hover:bg-white hover:text-accent transition-colors"
+        className="fixed bottom-20 right-4 z-50 lg:hidden w-14 h-14 border-2 border-ink bg-accent flex items-center justify-center hover:bg-white hover:text-accent transition-colors"
         aria-label="Message us on Facebook"
       >
         <svg className="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 24 24">
