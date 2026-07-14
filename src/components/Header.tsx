@@ -64,13 +64,13 @@ export default function Header() {
     <>
       <aside className="hidden md:flex fixed left-0 top-0 h-full w-64 flex-col border-r-2 border-ink bg-paper z-50">
         <div className="p-6 border-b-2 border-ink">
-          <Link href="/" className="block">
+          <Link href="/" className="flex justify-center">
             <Image
               src="/images/logo.png"
               alt="KM Online Solutions"
-              width={180}
-              height={60}
-              className="h-auto w-full max-w-[160px]"
+              width={160}
+              height={53}
+              className="h-auto"
               priority
             />
           </Link>
@@ -114,13 +114,13 @@ export default function Header() {
 
       <div className="md:hidden fixed top-0 left-0 right-0 z-50 border-b-2 border-ink bg-paper">
         <div className="flex items-center justify-between p-4">
-          <Link href="/" className="block w-32">
+          <Link href="/" className="flex justify-center w-32">
             <Image
               src="/images/logo.png"
               alt="KM Online Solutions"
               width={140}
               height={47}
-              className="h-auto w-full"
+              className="h-auto"
             />
           </Link>
           <button

@@ -100,9 +100,9 @@ export default function HeroSection() {
             initial={{ clipPath: "polygon(0 0, 0 0, 0 100%, 0 100%)" }}
             animate={{ clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)" }}
             transition={{ duration: 0.8, delay: 0.3, ease: [0.25, 0.1, 0.25, 1] }}
-            className="hidden md:flex md:col-span-2 justify-center relative"
+            className="hidden md:flex md:col-span-2 justify-center relative py-6"
           >
-            <div className="relative" style={{ transform: 'rotate(6deg)' }}>
+            <div className="relative my-2" style={{ transform: 'rotate(6deg)' }}>
               <div className="absolute inset-0 offset-border bg-ink/5 translate-x-2 translate-y-2" />
               <div className="relative offset-border w-full max-w-sm bg-white overflow-hidden">
                 <div className="flex items-center gap-1.5 px-3 py-2 border-b-2 border-ink bg-gray-100">
