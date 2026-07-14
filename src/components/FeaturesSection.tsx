@@ -23,13 +23,13 @@ const features = [
 
 export default function FeaturesSection() {
   return (
-    <section className="py-24 md:py-32 bg-paper border-b-2 border-ink">
+    <section className="py-24 lg:py-32 bg-paper border-b-2 border-ink">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <AnimatedSection>
           <p className="font-mono-custom text-xs text-ink mb-4 tracking-widest uppercase">
             Why Choose Us
           </p>
-          <h2 className="font-slab text-4xl md:text-5xl lg:text-6xl font-bold text-ink mb-4 leading-none">
+          <h2 className="font-slab text-4xl lg:text-6xl font-bold text-ink mb-4 leading-none">
             FEATURES THAT
             <br />
             SET US APART
@@ -40,7 +40,7 @@ export default function FeaturesSection() {
           </p>
         </AnimatedSection>
 
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="grid lg:grid-cols-2 gap-6">
           <AnimatedSection delay={0.1}>
             <div className="offset-border p-8 bg-accent text-white h-full">
               <h3 className="font-slab text-3xl font-bold mb-4">{features[0].title}</h3>

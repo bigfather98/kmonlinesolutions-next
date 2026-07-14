@@ -7,11 +7,11 @@ import { featuredProjects } from "@/data/portfolio";
 
 export default function PortfolioSection() {
   return (
-    <section className="py-24 md:py-32 bg-paper border-b-2 border-ink">
+    <section className="py-24 lg:py-32 bg-paper border-b-2 border-ink">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <AnimatedSection>
           <p className="font-mono-custom text-xs text-ink mb-4 tracking-widest uppercase">Our Portfolio</p>
-          <h2 className="font-slab text-4xl md:text-5xl lg:text-6xl font-bold text-ink mb-4 leading-none">
+          <h2 className="font-slab text-4xl lg:text-6xl font-bold text-ink mb-4 leading-none">
             SAMPLE
             <br />
             PROJECTS
@@ -21,7 +21,7 @@ export default function PortfolioSection() {
           </p>
         </AnimatedSection>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
+        <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6">
           {featuredProjects.map((project, i) => (
             <AnimatedSection key={project.title} delay={0.1 + i * 0.08}>
               <a href="/samples" className="block offset-border h-full">
@@ -60,7 +60,7 @@ export default function PortfolioSection() {
           </Link>
         </AnimatedSection>
 
-        <div className="mt-12 md:hidden">
+        <div className="mt-12 lg:hidden">
           <AnimatedSection delay={0.4}>
             <div className="offset-border p-6 bg-accent text-white text-center">
               <h3 className="font-slab text-xl font-bold mb-2">Start Your Project Today</h3>

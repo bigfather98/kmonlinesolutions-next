@@ -10,7 +10,7 @@ export default function Error({
   return (
     <div className="min-h-[60vh] flex items-center justify-center bg-paper">
       <div className="text-center px-4">
-        <h1 className="font-slab text-5xl md:text-6xl font-bold text-ink mb-4">OOPS!</h1>
+        <h1 className="font-slab text-5xl lg:text-6xl font-bold text-ink mb-4">OOPS!</h1>
         <p className="font-slab text-muted text-lg mb-8 max-w-md mx-auto">
           Something went wrong. Please try again or contact us if the problem persists.
         </p>

@@ -6,11 +6,11 @@ import { services } from "@/data/services";
 
 export default function ServicesSection() {
   return (
-    <section className="py-24 md:py-32 bg-paper border-b-2 border-ink">
+    <section className="py-24 lg:py-32 bg-paper border-b-2 border-ink">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <AnimatedSection>
           <p className="font-mono-custom text-xs text-ink mb-4 tracking-widest uppercase">What We Offer</p>
-          <h2 className="font-slab text-4xl md:text-5xl lg:text-6xl font-bold text-ink mb-4 leading-none">
+          <h2 className="font-slab text-4xl lg:text-6xl font-bold text-ink mb-4 leading-none">
             WEBSITE DESIGN
             <br />
             SERVICES
@@ -29,10 +29,10 @@ export default function ServicesSection() {
           </Link>
         </AnimatedSection>
 
-        <div className="mt-16 grid md:grid-cols-3 gap-6">
-          <AnimatedSection delay={0.1} className="md:col-span-2 md:row-span-2">
+        <div className="mt-16 grid lg:grid-cols-3 gap-6">
+          <AnimatedSection delay={0.1} className="lg:col-span-2 lg:row-span-2">
             <div className="offset-border p-8 bg-ink text-paper h-full">
-              <h3 className="font-slab text-2xl md:text-3xl font-bold mb-4">{services[0].title}</h3>
+              <h3 className="font-slab text-2xl lg:text-3xl font-bold mb-4">{services[0].title}</h3>
               <p className="font-slab text-paper/80 leading-relaxed">{services[0].description}</p>
             </div>
           </AnimatedSection>
