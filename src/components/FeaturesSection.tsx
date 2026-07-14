@@ -29,7 +29,7 @@ export default function FeaturesSection() {
           <p className="font-mono-custom text-xs text-ink mb-4 tracking-widest uppercase">
             Why Choose Us
           </p>
-          <h2 className="font-slab text-4xl md:text-5xl lg:text-6xl font-bold text-ink mb-4 leading-none -ml-1">
+          <h2 className="font-slab text-4xl md:text-5xl lg:text-6xl font-bold text-ink mb-4 leading-none">
             FEATURES THAT
             <br />
             SET US APART

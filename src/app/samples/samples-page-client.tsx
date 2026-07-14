@@ -22,7 +22,7 @@ export default function SamplesPageClient() {
             transition={{ duration: 0.8, ease: [0.25, 0.1, 0.25, 1] }}
           >
             <p className="font-mono-custom text-xs text-ink mb-4 tracking-widest uppercase">Our Portfolio</p>
-            <h1 className="font-slab text-5xl md:text-6xl lg:text-7xl font-bold text-ink leading-none -ml-1">
+            <h1 className="font-slab text-5xl md:text-6xl lg:text-7xl font-bold text-ink leading-none">
               OUR
               <br />
               SAMPLES

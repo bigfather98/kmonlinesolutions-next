@@ -27,7 +27,7 @@ export default function BlogSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <AnimatedSection>
           <p className="font-mono-custom text-xs text-ink mb-4 tracking-widest uppercase">Blog &amp; Insights</p>
-          <h2 className="font-slab text-4xl md:text-5xl lg:text-6xl font-bold text-ink mb-4 leading-none -ml-1">
+          <h2 className="font-slab text-4xl md:text-5xl lg:text-6xl font-bold text-ink mb-4 leading-none">
             LATEST
             <br />
             ARTICLES
