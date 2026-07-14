@@ -14,6 +14,38 @@ const navLinks = [
   { href: "/pricing", label: "PRICING" },
 ];
 
+function NavIcon({ href, className }: { href: string; className?: string }) {
+  switch (href) {
+    case "/":
+      return (
+        <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+        </svg>
+      );
+    case "/services":
+      return (
+        <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.066 2.573c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.573 1.066c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.066-2.573c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+        </svg>
+      );
+    case "/samples":
+      return (
+        <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 5a1 1 0 011-1h4a1 1 0 011 1v4a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM14 5a1 1 0 011-1h4a1 1 0 011 1v4a1 1 0 01-1 1h-4a1 1 0 01-1-1V5zM4 15a1 1 0 011-1h4a1 1 0 011 1v4a1 1 0 01-1 1H5a1 1 0 01-1-1v-4zM14 15a1 1 0 011-1h4a1 1 0 011 1v4a1 1 0 01-1 1h-4a1 1 0 01-1-1v-4z" />
+        </svg>
+      );
+    case "/pricing":
+      return (
+        <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 10h18M7 15h1m4 0h1m-7 4h12a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2z" />
+        </svg>
+      );
+    default:
+      return null;
+  }
+}
+
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const pathname = usePathname();
@@ -51,13 +83,17 @@ export default function Header() {
               <Link
                 key={link.href}
                 href={link.href}
-                className={`block px-4 py-3 text-sm font-mono-custom font-bold border-2 transition-colors ${
+                className={`flex items-center gap-3 px-4 py-3 text-sm font-mono-custom font-bold border-2 transition-colors ${
                   isActive
                     ? "bg-accent text-white border-accent"
-                    : "bg-transparent text-ink border-transparent hover:border-ink"
+                    : "bg-transparent text-muted border-transparent hover:border-ink hover:text-ink"
                 }`}
               >
-                {link.label}
+                <NavIcon
+                  href={link.href}
+                  className={`w-4 h-4 shrink-0 ${isActive ? "text-white" : "text-muted"}`}
+                />
+                <span className={isActive ? "text-white" : ""}>{link.label}</span>
               </Link>
             );
           })}
@@ -113,19 +149,25 @@ export default function Header() {
             transition={{ duration: 0.2 }}
             className="fixed inset-0 z-40 md:hidden bg-paper pt-16"
           >
-            <nav className="p-4 space-y-2">
+                <nav className="p-4 space-y-2">
               {navLinks.map((link, idx) => (
                 <Link
                   key={link.href}
                   ref={idx === 0 ? firstLinkRef : undefined}
                   href={link.href}
                   onClick={() => setMenuOpen(false)}
-                  className={`block px-4 py-4 text-sm font-mono-custom font-bold border-2 ${
+                  className={`flex items-center gap-3 px-4 py-4 text-sm font-mono-custom font-bold border-2 ${
                     pathname === link.href
                       ? "bg-accent text-white border-accent"
                       : "bg-transparent text-ink border-ink hover:bg-ink hover:text-paper"
                   }`}
                 >
+                  <NavIcon
+                    href={link.href}
+                    className={`w-4 h-4 shrink-0 ${
+                      pathname === link.href ? "text-white" : "text-ink"
+                    }`}
+                  />
                   {link.label}
                 </Link>
               ))}
