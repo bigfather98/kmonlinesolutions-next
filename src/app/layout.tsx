@@ -99,8 +99,8 @@ export default function RootLayout({
           Skip to content
         </a>
         <Header />
-        <div className="md:ml-64 pt-20 md:pt-0">
-          <main id="main-content" className="flex-1">{children}</main>
+        <div className="md:ml-64">
+          <main id="main-content" className="flex-1 pt-20 md:pt-0">{children}</main>
           <Footer />
         </div>
         <Analytics />
