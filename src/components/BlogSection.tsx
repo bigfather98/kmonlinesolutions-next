@@ -23,11 +23,11 @@ const posts = [
 
 export default function BlogSection() {
   return (
-    <section className="py-24 md:py-32 bg-paper border-b-2 border-ink">
+    <section className="py-24 lg:py-32 bg-paper border-b-2 border-ink">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <AnimatedSection>
           <p className="font-mono-custom text-xs text-ink mb-4 tracking-widest uppercase">Blog &amp; Insights</p>
-          <h2 className="font-slab text-4xl md:text-5xl lg:text-6xl font-bold text-ink mb-4 leading-none">
+          <h2 className="font-slab text-4xl lg:text-6xl font-bold text-ink mb-4 leading-none">
             LATEST
             <br />
             ARTICLES
@@ -37,11 +37,11 @@ export default function BlogSection() {
           </p>
         </AnimatedSection>
 
-        <div className="grid md:grid-cols-2 gap-6 mb-6">
-          <AnimatedSection delay={0.1} className="md:col-span-2 md:row-span-2">
+        <div className="grid lg:grid-cols-2 gap-6 mb-6">
+          <AnimatedSection delay={0.1} className="lg:col-span-2 lg:row-span-2">
             <div className="offset-border p-8 bg-ink text-paper h-full">
               <p className="font-mono-custom text-xs text-paper/60 mb-3">{posts[0].date}</p>
-              <h3 className="font-slab text-2xl md:text-3xl font-bold mb-3">{posts[0].title}</h3>
+              <h3 className="font-slab text-2xl lg:text-3xl font-bold mb-3">{posts[0].title}</h3>
               <p className="font-slab text-paper/80 leading-relaxed mb-6">{posts[0].excerpt}</p>
               <Link
                 href="/"
