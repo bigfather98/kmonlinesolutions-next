@@ -56,7 +56,7 @@ export default function HeroSection() {
               Manila PH &mdash; Web Design &amp; Development
             </p>
 
-            <h1 className="font-slab text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold leading-none text-ink -ml-1 md:-ml-2">
+            <h1 className="font-slab text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold leading-none text-ink"
               WE BUILD
               <br />
               WEBSITES

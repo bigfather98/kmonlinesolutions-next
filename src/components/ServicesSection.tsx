@@ -10,7 +10,7 @@ export default function ServicesSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <AnimatedSection>
           <p className="font-mono-custom text-xs text-ink mb-4 tracking-widest uppercase">What We Offer</p>
-          <h2 className="font-slab text-4xl md:text-5xl lg:text-6xl font-bold text-ink mb-4 leading-none -ml-1">
+          <h2 className="font-slab text-4xl md:text-5xl lg:text-6xl font-bold text-ink mb-4 leading-none">
             WEBSITE DESIGN
             <br />
             SERVICES
