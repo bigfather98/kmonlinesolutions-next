@@ -30,3 +30,8 @@ html {
   border: 2px solid var(--color-ink);
   box-shadow: 4px 4px 0 0 var(--color-ink);
 }
+
+.bg-dot-grid {
+  background-image: radial-gradient(circle, var(--color-ink) 1.5px, transparent 1.5px);
+  background-size: 24px 24px;
+}
