@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 const plans = [
   {
     name: "Tier 1 - Basic",
-    price: "₱ 5,999",
+    price: "₱ 4,999",
     subtitle: "Perfect for startups",
     features: [
       "Functional 1-Page Website",
@@ -20,7 +20,7 @@ const plans = [
       "1 Business Email Address",
     ],
     cta: "Order",
-    href: "/contact-us",
+    href: "/contact-us?tier=basic",
     highlight: false,
   },
   {
@@ -34,12 +34,12 @@ const plans = [
       "Product or Service Listing Page",
       "Facebook Page Integration",
       "Instagram Account Integration",
-      "Chat Integration (Up to 5 choices)",
+      "Chat Integration (Up to 3 choices)",
       "Booking Forms",
       "5 Business Email Address",
     ],
     cta: "Order",
-    href: "/contact-us",
+    href: "/contact-us?tier=advanced",
     highlight: true,
   },
   {
@@ -58,8 +58,9 @@ const plans = [
       "Email Marketing",
     ],
     cta: "Order",
-    href: "/contact-us",
+    href: "/contact-us?tier=ecommerce",
     highlight: false,
+    stamp: "1-Time Fee Only • No Monthly Fees",
   },
   {
     name: "Custom Development",
@@ -77,7 +78,7 @@ const plans = [
       "API Integrations",
     ],
     cta: "Inquire",
-    href: "/contact-us",
+    href: "/contact-us?tier=custom",
     highlight: false,
   },
 ];
@@ -142,6 +143,11 @@ export default function PricingPageClient() {
                       </li>
                     ))}
                   </ul>
+                  {(plan as any).stamp && (
+                    <div className="bg-accent/10 border border-accent/30 text-accent text-center font-mono-custom text-xs font-bold py-2 px-3 mb-6 tracking-wider">
+                      {(plan as any).stamp}
+                    </div>
+                  )}
                   <Link
                     href={plan.href}
                     className={`block text-center w-full py-3 font-mono-custom text-sm font-bold border-2 transition-colors ${
