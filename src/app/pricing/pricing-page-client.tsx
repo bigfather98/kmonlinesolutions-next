@@ -40,8 +40,7 @@ const plans = [
     ],
     cta: "Order",
     href: "/contact-us",
-    highlight: false,
-    stamp: "1-Time Fee Only • No Monthly Fees",
+    highlight: true,
   },
   {
     name: "Tier 3 - Ecommerce",
@@ -61,6 +60,7 @@ const plans = [
     cta: "Order",
     href: "/contact-us",
     highlight: false,
+    stamp: "1-Time Fee Only • No Monthly Fees",
   },
   {
     name: "Custom Development",
