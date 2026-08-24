@@ -20,7 +20,7 @@ const plans = [
       "1 Business Email Address",
     ],
     cta: "Order",
-    href: "/contact-us",
+    href: "/contact-us?tier=basic",
     highlight: false,
   },
   {
@@ -39,7 +39,7 @@ const plans = [
       "5 Business Email Address",
     ],
     cta: "Order",
-    href: "/contact-us",
+    href: "/contact-us?tier=advanced",
     highlight: true,
   },
   {
@@ -58,7 +58,7 @@ const plans = [
       "Email Marketing",
     ],
     cta: "Order",
-    href: "/contact-us",
+    href: "/contact-us?tier=ecommerce",
     highlight: false,
     stamp: "1-Time Fee Only • No Monthly Fees",
   },
@@ -78,7 +78,7 @@ const plans = [
       "API Integrations",
     ],
     cta: "Inquire",
-    href: "/contact-us",
+    href: "/contact-us?tier=custom",
     highlight: false,
   },
 ];

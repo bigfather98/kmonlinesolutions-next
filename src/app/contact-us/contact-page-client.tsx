@@ -1,12 +1,14 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { SITE } from "@/lib/constants";
+import { useSearchParams } from "next/navigation";
 
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 export default function ContactPageClient() {
+  const searchParams = useSearchParams();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -16,6 +18,13 @@ export default function ContactPageClient() {
   });
   const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle");
   const [emailError, setEmailError] = useState("");
+
+  useEffect(() => {
+    const tier = searchParams.get("tier");
+    if (tier) {
+      setFormData((prev) => ({ ...prev, service: tier }));
+    }
+  }, [searchParams]);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -169,7 +178,7 @@ export default function ContactPageClient() {
                     className="w-full px-4 py-3 border-2 border-ink bg-paper font-slab text-sm text-ink focus:outline-none focus:border-accent transition-colors"
                   >
                     <option value="">Select a service</option>
-                    <option value="basic">Tier 1 - ₱5,999 Basic</option>
+                    <option value="basic">Tier 1 - ₱4,999 Basic</option>
                     <option value="advanced">Tier 2 - ₱10,999 Advance</option>
                     <option value="ecommerce">Tier 3 - ₱19,999 Ecommerce</option>
                     <option value="custom">Custom Development</option>
