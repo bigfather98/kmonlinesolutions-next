@@ -35,8 +35,7 @@ export default function FeaturesSection() {
             SET US APART
           </h2>
           <p className="font-slab text-muted max-w-2xl text-lg mb-16">
-            At KM Online Solutions, we create SEO-optimized websites designed to rank high on Google
-            and attract your ideal customers. We can focus our SEO in the Philippines to enable localization.
+            KM Online Solutions creates SEO-optimized websites designed to rank high on Google and attract customers in the Philippines. Our websites are built with modern technologies — Next.js, TypeScript, and Tailwind CSS — ensuring fast load times, mobile responsiveness, and search engine visibility. We focus on web design in the Philippines to enable localization and help businesses rank for Manila and Metro Manila searches.
           </p>
         </AnimatedSection>
 

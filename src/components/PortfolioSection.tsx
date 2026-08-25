@@ -17,7 +17,7 @@ export default function PortfolioSection() {
             PROJECTS
           </h2>
           <p className="font-slab text-muted max-w-2xl text-lg mb-12">
-            Discover our portfolio of professionally designed, SEO-optimized websites for businesses in the Philippines.
+            Discover our portfolio of professionally designed, SEO-optimized websites for businesses in the Philippines. We have built sites for spas, restaurants, real estate agents, solar companies, preschools, law firms, and eCommerce brands — each tailored to rank on Google and attract local customers.
           </p>
         </AnimatedSection>
 

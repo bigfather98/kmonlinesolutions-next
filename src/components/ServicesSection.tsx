@@ -16,7 +16,7 @@ export default function ServicesSection() {
             SERVICES
           </h2>
           <p className="font-slab text-muted max-w-2xl text-lg mb-8">
-            We offer a full range of website design and development services tailored for businesses in the Philippines.
+            KM Online Solutions offers a full range of website design and development services for businesses in the Philippines. From basic one-page websites starting at ₱4,999 to custom enterprise solutions, we build SEO-optimized, mobile-responsive sites that rank on Google and convert visitors into customers.
           </p>
           <p className="font-slab text-xl font-bold text-ink mb-4">
             Join our growing list of satisfied clients today!

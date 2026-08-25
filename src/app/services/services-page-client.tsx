@@ -20,7 +20,7 @@ export default function ServicesPageClient() {
               SERVICES
             </h1>
             <p className="font-slab text-lg text-muted mt-6 max-w-xl">
-              Comprehensive web design and digital solutions tailored for your business.
+              KM Online Solutions offers 8 web design and development services for businesses in the Philippines, from basic one-page sites to custom enterprise solutions. All websites are SEO-optimized and mobile-responsive.
             </p>
           </motion.div>
         </div>

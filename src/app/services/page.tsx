@@ -2,13 +2,13 @@ import type { Metadata } from "next";
 import ServicesPageClient from "./services-page-client";
 
 export const metadata: Metadata = {
-  title: "Web Design Services Philippines | KM Online Solutions",
+  title: "Web Design Services in Manila Philippines | KM Online Solutions",
   description:
-    "Professional web design and development services in the Philippines. Business websites, eCommerce, SEO, hosting, and custom development.",
+    "KM Online Solutions offers 8 web design and development services in the Philippines: business websites, landing pages, eCommerce, SEO, hosting, custom development, database management, and AI automation. Starting at ₱4,999.",
   openGraph: {
-    title: "Web Design Services Philippines | KM Online Solutions",
+    title: "Web Design Services in Manila Philippines | KM Online Solutions",
     description:
-      "Professional web design and development services in the Philippines. Business websites, eCommerce, SEO, hosting, and custom development.",
+      "8 web design services for Philippine businesses: business websites, eCommerce, SEO, hosting, custom development. Starting at ₱4,999.",
   },
 };
 

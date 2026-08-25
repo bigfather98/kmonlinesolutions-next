@@ -1,0 +1,87 @@
+# KM Online Solutions
+
+> KM Online Solutions is a website creator in Manila, Philippines that builds SEO-optimized, mobile-responsive websites for businesses in Metro Manila and across the Philippines. Founded by Kirk and based in Eastwood, Quezon City, the agency has delivered web design projects for spas, restaurants, real estate agents, law firms, solar companies, preschools, and eCommerce brands.
+
+## Company Facts
+
+- **Location**: Eastwood, Quezon City, Metro Manila, Philippines 1110
+- **Coordinates**: 14.6108458, 121.0768112
+- **Email**: connect@kmonlinesolutions.com
+- **Phone**: +63 926 764 0444
+- **Hours**: Monday-Saturday, 9:00 AM - 5:00 PM (GMT+8)
+- **Founded**: Philippines
+- **Website**: https://kmonlinesolutions.com
+
+## Services
+
+KM Online Solutions offers 8 core web design and development services:
+
+1. **Business Website Design** - Professionally designed, SEO-optimized, mobile-friendly business websites. Starting at ₱4,999.
+2. **Landing Page Design** - High-converting landing pages optimized for maximum leads and sales.
+3. **Web Hosting Services** - Reliable high-speed hosting in the Philippines with 99.9% uptime guarantee.
+4. **eCommerce Development** - Secure online stores with WooCommerce, shopping cart, payment gateways, and seamless checkout. Starting at ₱19,999.
+5. **Website Redesign** - Revamp outdated websites with modern design, better SEO, and improved user experience.
+6. **Custom Development** - Tailor-made websites with custom functionality including school management systems, patient records, hotel booking, and real estate management.
+7. **Database Management** - Secure and efficient database design, migration, and management for business applications.
+8. **AI Automation** - Integrate AI-powered automation into workflows to save time, reduce errors, and scale faster.
+
+## Pricing
+
+All pricing is a one-time fee with no monthly charges.
+
+- **Tier 1 - Basic (₱4,999)**: 1-page website, responsive design, unlimited bandwidth, cross-browser compatibility, social media links, testimonials, chat integration, contact form, 1 business email
+- **Tier 2 - Advance (₱10,999)**: Everything in Basic plus up to 5 pages, SEO, product/service listing, Facebook and Instagram integration, up to 3 chat integrations, booking forms, 5 business emails. Most popular plan.
+- **Tier 3 - Ecommerce (₱19,999)**: Everything in Advance plus up to 10 pages, WooCommerce, up to 50 products, add-to-cart, shopping cart, customer login, online payment integration, email marketing.
+- **Custom Development (Contact for quote)**: Custom functionality including school management, patient records, sales management, event management, restaurant reservations, hotel booking, real estate management, API integrations.
+
+## Portfolio
+
+KM Online Solutions has delivered projects across multiple industries in the Philippines:
+
+- **Spa Business** (Basic) - https://spa.kmonlinesolutions.com/
+- **Clothing Shop** (E-Commerce) - https://clothingshop.kmonlinesolutions.com/
+- **Real Estate Agent** (Advanced) - https://realestate.kmonlinesolutions.com/
+- **Solar Company** (Custom) - https://lekkersolarcorp.kmonlinesolutions.com/
+- **Preschool Business** (Basic) - https://preschool.kmonlinesolutions.com/
+- **Law Firm** (Advanced) - https://zva1.kmonlinesolutions.com/
+- **Restaurant Business** (Basic) - https://deli.kmonlinesolutions.com/
+- **Cosmetic Brand** (E-Commerce) - https://luxeskin.kmonlinesolutions.com/
+
+## Tech Stack
+
+- **Framework**: Next.js 16 (App Router) with React 19
+- **Language**: TypeScript 5
+- **Styling**: Tailwind CSS 4
+- **Animations**: Framer Motion
+- **Email**: Nodemailer (SMTP)
+- **Analytics**: Vercel Analytics
+- **Deployment**: Vercel
+- **Fonts**: Roboto Slab (headings), JetBrains Mono (monospace)
+
+## Pages
+
+- [Home](https://kmonlinesolutions.com/) - Main landing page with hero, features, services, portfolio, testimonials, and blog
+- [Services](https://kmonlinesolutions.com/services) - Full list of 8 web design and development services
+- [Samples](https://kmonlinesolutions.com/samples) - Portfolio of 8 completed projects with category filtering (Basic, Advanced, E-Commerce, Custom)
+- [Pricing](https://kmonlinesolutions.com/pricing) - 4 pricing tiers from ₱4,999 to custom
+- [Contact Us](https://kmonlinesolutions.com/contact-us) - Contact form, office location, phone, and email
+- [About / Knowledge Base](https://kmonlinesolutions.com/about/knowledge-base) - Company overview, services, pricing, technology, portfolio, and location details
+
+## SEO & Technical Details
+
+- Sitemap: https://kmonlinesolutions.com/sitemap.xml
+- robots.txt allows all crawlers including GPTBot, ClaudeBot, PerplexityBot
+- LocalBusiness schema with geocoordinates
+- FAQPage schema covering pricing, timeline, technologies, and SEO
+- Open Graph and Twitter Card meta tags
+- Canonical URL: https://kmonlinesolutions.com
+- Target keywords: website creator Manila, web design Philippines, web developer Manila, website maker Philippines
+
+## Contact
+
+- **Email**: connect@kmonlinesolutions.com
+- **Phone**: +63 926 764 0444
+- **Address**: Eastwood, Quezon City, Metro Manila, Philippines 1110
+- **Facebook**: https://www.facebook.com/kmonlinesolutionsph/
+- **Instagram**: https://www.instagram.com/kmonlinesolutions/
+- **Messenger**: https://m.me/522285660969539

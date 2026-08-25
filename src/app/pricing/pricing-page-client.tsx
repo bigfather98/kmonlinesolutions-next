@@ -3,7 +3,16 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 
-const plans = [
+const plans: Array<{
+  name: string;
+  price: string;
+  subtitle: string;
+  features: string[];
+  cta: string;
+  href: string;
+  highlight: boolean;
+  stamp?: string;
+}> = [
   {
     name: "Tier 1 - Basic",
     price: "₱ 5,999",
@@ -142,6 +151,11 @@ export default function PricingPageClient() {
                       </li>
                     ))}
                   </ul>
+                  {plan.stamp && (
+                    <div className="bg-accent/10 border border-accent/30 text-accent text-center font-mono-custom text-xs font-bold py-2 px-3 mb-6 tracking-wider">
+                      {plan.stamp}
+                    </div>
+                  )}
                   <Link
                     href={plan.href}
                     className={`block text-center w-full py-3 font-mono-custom text-sm font-bold border-2 transition-colors ${

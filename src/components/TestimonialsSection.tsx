@@ -49,7 +49,7 @@ export default function TestimonialsSection() {
             CLIENTS SAY
           </h2>
           <p className="font-slab text-paper/60 max-w-2xl text-lg mb-16">
-            See what our happy clients have to say about our top-rated website design services in the Philippines!
+            See what our clients say about our website design services in the Philippines. KM Online Solutions has delivered SEO-optimized websites for businesses across Metro Manila and the Philippines.
           </p>
         </AnimatedSection>
 

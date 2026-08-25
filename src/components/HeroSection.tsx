@@ -53,7 +53,7 @@ export default function HeroSection() {
             className="lg:col-span-3"
           >
             <p className="font-mono-custom text-xs text-ink mb-6 tracking-widest uppercase">
-              Manila PH &mdash; Web Design &amp; Development
+              Manila PH &mdash; Website Creator &amp; Web Development Agency
             </p>
 
             <h1 className="font-slab text-5xl sm:text-6xl lg:text-8xl font-bold leading-none text-ink">
@@ -65,8 +65,7 @@ export default function HeroSection() {
             </h1>
 
             <p className="font-slab text-lg lg:text-xl text-muted leading-relaxed mt-8 mb-8 max-w-xl">
-              Professional Website Design &amp; SEO Services for Businesses in the Philippines.
-              We create user-friendly, SEO-optimized websites to help Filipino businesses grow online.
+              KM Online Solutions is a website creator in Manila, Philippines, building SEO-optimized, mobile-responsive websites for businesses in Metro Manila and across the Philippines. We have delivered projects for spas, restaurants, real estate agents, law firms, and eCommerce brands — starting at ₱4,999.
             </p>
 
             <div className="flex flex-wrap gap-4">

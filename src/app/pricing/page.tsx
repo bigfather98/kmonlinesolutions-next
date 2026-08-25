@@ -2,13 +2,13 @@ import type { Metadata } from "next";
 import PricingPageClient from "./pricing-page-client";
 
 export const metadata: Metadata = {
-  title: "Web Design Pricing Philippines | KM Online Solutions Packages",
+  title: "Web Design Pricing in Manila Philippines | KM Online Solutions Packages",
   description:
-    "Affordable web design packages in the Philippines. Starting at ₱5,999. Basic, Advanced, E-Commerce, and Custom development plans.",
+    "Affordable web design pricing in the Philippines. Basic websites from ₱4,999, advanced sites ₱10,999, eCommerce stores ₱19,999. All one-time fees, no monthly charges. Free consultation.",
   openGraph: {
-    title: "Web Design Pricing Philippines | KM Online Solutions Packages",
+    title: "Web Design Pricing in Manila Philippines | KM Online Solutions",
     description:
-      "Affordable web design packages in the Philippines. Starting at ₱5,999.",
+      "Affordable web design in the Philippines from ₱4,999. Basic, Advanced, eCommerce, and Custom plans. One-time fees.",
   },
 };
 
