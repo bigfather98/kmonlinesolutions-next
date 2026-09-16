@@ -53,7 +53,7 @@ export default function HeroSection() {
             className="lg:col-span-3"
           >
             <p className="font-mono-custom text-xs text-ink mb-6 tracking-widest uppercase">
-              Manila PH &mdash; Web Design &amp; Development
+              Manila PH - Web Design &amp; Development
             </p>
 
             <h1 className="font-slab text-5xl sm:text-6xl lg:text-8xl font-bold leading-none text-ink">

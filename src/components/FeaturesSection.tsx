@@ -9,7 +9,7 @@ const features = [
   },
   {
     title: "Mobile-Responsive",
-    description: "Beautifully adapted for all devices — phones, tablets, and desktops.",
+    description: "Beautifully adapted for all devices: phones, tablets, and desktops.",
   },
   {
     title: "Fast & Secure",

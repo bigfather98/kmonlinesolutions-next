@@ -16,7 +16,7 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "KM Online Solutions | Web Design Philippines — Manila-Based Web Development",
+  title: "KM Online Solutions | Web Design Philippines - Manila-Based Web Development",
   description:
     "KM Online Solutions builds SEO-optimized websites for businesses in the Philippines. Web design and development based in Metro Manila.",
   keywords: [
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     "web development Philippines",
   ],
   openGraph: {
-    title: "KM Online Solutions | Web Design Philippines — Manila-Based Web Development",
+    title: "KM Online Solutions | Web Design Philippines - Manila-Based Web Development",
     description:
       "KM Online Solutions builds SEO-optimized websites for businesses in the Philippines. Web design and development based in Metro Manila.",
     url: "https://kmonlinesolutions.com",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "KM Online Solutions | Web Design Philippines — Manila-Based Web Development",
+    title: "KM Online Solutions | Web Design Philippines - Manila-Based Web Development",
     description:
       "KM Online Solutions builds SEO-optimized websites for businesses in the Philippines.",
   },

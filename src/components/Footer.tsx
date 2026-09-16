@@ -71,6 +71,8 @@ export default function Footer() {
                 { href: "/samples", label: "Samples" },
                 { href: "/pricing", label: "Pricing" },
                 { href: "/contact-us", label: "Contact Us" },
+                { href: "/terms-of-service", label: "Terms of Service" },
+                { href: "/privacy-policy", label: "Privacy Policy" },
               ].map((link) => (
                 <Link
                   key={link.href}
@@ -124,10 +126,19 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t-2 border-ink pt-8 text-center">
+        <div className="border-t-2 border-ink pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="font-mono-custom text-xs text-muted">
             &copy; {new Date().getFullYear()} {SITE.name}. All rights reserved.
           </p>
+          <div className="flex items-center gap-4 font-mono-custom text-xs">
+            <Link href="/terms-of-service" className="text-muted hover:text-accent transition-colors">
+              Terms of Service
+            </Link>
+            <span className="text-muted" aria-hidden="true">|</span>
+            <Link href="/privacy-policy" className="text-muted hover:text-accent transition-colors">
+              Privacy Policy
+            </Link>
+          </div>
         </div>
       </div>
     </footer>
