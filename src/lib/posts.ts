@@ -80,3 +80,19 @@ export async function getPublishedPostSlugs(): Promise<string[]> {
   );
   return rows.map((row) => row.slug);
 }
+
+/**
+ * All published posts, newest first — for the /blog index grid.
+ */
+export async function getAllPublishedPosts(limit = 50): Promise<PostCardData[]> {
+  const safeLimit = Math.max(1, Math.min(100, Math.floor(limit)));
+  return dbQuery<PostCardData[]>(
+    `SELECT ${POST_CARD_COLUMNS}
+     FROM posts
+     WHERE status = 'published'
+       AND published_at IS NOT NULL
+       AND published_at <= NOW()
+     ORDER BY published_at DESC
+     LIMIT ${safeLimit}`,
+  );
+}
