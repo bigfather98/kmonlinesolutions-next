@@ -5,16 +5,19 @@ import AnimatedSection from "./AnimatedSection";
 
 const posts = [
   {
+    slug: "why-your-business-needs-a-professional-website-in-2025",
     title: "Why Your Business Needs a Professional Website in 2025",
     excerpt: "Discover why having a professional website is crucial for business growth in the digital age.",
     date: "March 15, 2025",
   },
   {
+    slug: "seo-tips-for-small-businesses-in-the-philippines",
     title: "SEO Tips for Small Businesses in the Philippines",
     excerpt: "Learn practical SEO strategies to help your small business rank higher on Google.",
     date: "February 28, 2025",
   },
   {
+    slug: "ecommerce-vs-physical-store-which-is-right-for-you",
     title: "eCommerce vs Physical Store: Which is Right for You?",
     excerpt: "Compare the benefits of online and physical retail to determine the best approach for your business.",
     date: "January 20, 2025",
@@ -44,7 +47,7 @@ export default function BlogSection() {
               <h3 className="font-slab text-2xl lg:text-3xl font-bold mb-3">{posts[0].title}</h3>
               <p className="font-slab text-paper/80 leading-relaxed mb-6">{posts[0].excerpt}</p>
               <Link
-                href="/"
+                href={`/blog/${posts[0].slug}`}
                 className="font-mono-custom text-xs font-bold text-accent hover:text-white inline-flex items-center gap-1 transition-colors"
               >
                 READ ARTICLE
@@ -62,7 +65,7 @@ export default function BlogSection() {
                 <h3 className="font-slab text-xl font-bold text-ink mb-2">{post.title}</h3>
                 <p className="font-slab text-muted text-sm leading-relaxed mb-4 flex-1">{post.excerpt}</p>
                 <Link
-                  href="/"
+                  href={`/blog/${post.slug}`}
                   className="font-mono-custom text-xs font-bold text-accent hover:text-ink inline-flex items-center gap-1 transition-colors"
                 >
                   READ ARTICLE
